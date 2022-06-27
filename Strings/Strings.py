@@ -4,6 +4,8 @@ from timeit import default_timer as runtime_timer
 
 
 print("------ example 1 ------")
+name_string = input('Please enter your name:')
+
 single_line_string = 'Hello'
 
 double_line_string = """Line 1 \
@@ -15,17 +17,22 @@ substring_el = single_line_string[1:3]
 substring_he = single_line_string[:2]
 substring_reversed = single_line_string[::-1]
 
+
+print('Nice to meet you,', name_string + '.')  # The " , " concatenates and adds a space. The " + " concatenates only
 print(single_line_string)
 print(double_line_string)
 print(substring_el)
 print(substring_he)
 print(substring_reversed)
 
-
 print("------ example 2 ------")
 a = "Joseph"
 sentence = "Hello my name is %s" % a
 print(sentence)
+
+a_1 = "James"
+sentence_0 = "Hello my name is {1}, {0} {1}".format(a, a_1)
+print(sentence_0)
 
 
 print("------ example 3 ------")
