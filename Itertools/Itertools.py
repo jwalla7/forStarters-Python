@@ -1,6 +1,6 @@
 # Itertools contains iterator Methods for efficient looping
 
-from itertools import count, cycle, repeat, accumulate, chain, compress, dropwhile, filterfalse, groupby, islice, starmap, takewhile, tee, zip_longest, product, permutations, combinations, combinations_with_replacement
+from itertools import *
 
 # https://docs.python.org/3/library/itertools.html#module-Itertools
 
