@@ -7,7 +7,7 @@ for i in range(10):
 increment_by_two_to_ten_string = ", ".join(format(i) for i in range(10))
 print(increment_by_two_to_ten_string)
 
-# Decrement by 1 starting from 10, print Go at 0, wait .5 sec after each print
+# Decrement by 1 starting from 10, print Go at 0, wait .25 sec after each print
 for i in range(10, 0, -1):
     print(i, end=" ")
     time.sleep(0.25)
