@@ -1,6 +1,6 @@
 """
 Set Types: set, frozenset
-set: unordered, mutable, no duplicates
+set: unordered, immutable, no duplicates
 frozenset: unordered, immutable, no duplicates, and can be used as a dictionary key or as an element of another set
 """
 

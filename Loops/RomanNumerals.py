@@ -1,3 +1,5 @@
+from collections import deque
+
 class RomanNumerals:
     roman_string = ""
 
@@ -27,6 +29,22 @@ class RomanNumerals:
         print(str(rn_sum))
         return rn_sum
 
+    @staticmethod
+    def romanNumeralsStr(self: int) -> str:
+        roman_numerals_dictionary_1 = {
+            1: 'I',
+            5: 'V',
+            10: 'X',
+            50: 'L',
+            100: 'C',
+            500: 'D',
+            1000: 'M'
+        }
+
+        rn_ordered_list = deque()
+        queue = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000]
+
+
 
 roman_numeral_test = RomanNumerals()
 roman_numeral_test.romanNumeralsInt("III")  # 3
@@ -34,3 +52,7 @@ roman_numeral_test.romanNumeralsInt("LVII")  # 58
 roman_numeral_test.romanNumeralsInt("MCMXCIV")  # 1994
 roman_numeral_test.romanNumeralsInt("LXXXIX")  # 89
 roman_numeral_test.romanNumeralsInt("MMD")  # 2500
+roman_numeral_test.romanNumeralsInt("CMLII")  # 952
+
+# roman_numeral_test_1 = RomanNumerals()
+# roman_numeral_test_1.romanNumeralsStr(3)
