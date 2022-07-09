@@ -1,5 +1,22 @@
 import time
 
+# Combine Lists
+fruits = ["Apple", "Cantaloupe", "Banana"]
+fruits_colors = ["Red", "Orange", "Yellow"]
+fruits_minerals = ["Fiber", "Folate", "Potassium"]
+
+i = 0
+fruits_info = []
+for fruit in fruits:
+    colors = fruits_colors[i]
+    minerals = fruits_minerals[i]
+    fruits_info.append((fruit, colors, minerals))
+    i += 1
+
+print(fruits_info)
+print(list(fruits_info))
+
+
 # Increment from 0 to 9, print two parallel columns
 for i in range(10):
     print(i, i)

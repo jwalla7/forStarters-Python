@@ -66,3 +66,9 @@ for i in miles_first_quintet_1955:
 
 if "band_leader" in miles_second_quintet_1964:
     print("Band Leader: " + str(miles_second_quintet_1964["band_leader"]["name"]))
+
+
+print("------ Example ------")
+squared_number_dictionary_99 = {x: x*x for x in range(1, 100)}
+print(squared_number_dictionary_99)
+

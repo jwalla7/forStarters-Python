@@ -1,3 +1,6 @@
+x = "hello"[0]
+print(x)
+
 class Person:
     def __init__(self):
         pass
