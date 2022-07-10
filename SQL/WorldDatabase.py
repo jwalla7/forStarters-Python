@@ -19,7 +19,7 @@ for db in input_cursor:
 world_db = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="MACjrw20148!",
+    password=
     database="world"
 )
 
