@@ -13,8 +13,11 @@ for fruit in fruits:
     fruits_info.append((fruit, colors, minerals))
     i += 1
 
+zip_fruits_info = (list(zip(fruits,fruits_colors, fruits_minerals )))
+
 print(fruits_info)
-print(list(fruits_info))
+print("for-in: " + str(list(fruits_info)))
+print("zip: " + str(zip_fruits_info))
 
 
 # Increment from 0 to 9, print two parallel columns

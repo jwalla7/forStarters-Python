@@ -24,8 +24,6 @@ sorted_full_names_by_first_name_then_last_name = sorted(full_names, key=lambda n
 # sorted_full_names_by_first_name_reversed_then_last_name = sorted(full_names, key=lambda n: n[6::][0])
 
 
-
-
 print("First Names: " + str(first_names))
 print("Last Names: " + str(last_names))
 print("Full Names: " + str(full_names))
