@@ -47,6 +47,20 @@ print("------ Values fruits have that more_fruits do not have ------")
 print(fruits.difference(more_fruits))
 
 
+print("------ difference and symmetric_difference")
+# difference and symmetric_difference
+art_friends = {"Ralf", "Dot", "Gen"}
+science_friends = {"Gen", "Charlie"}
+
+art_but_not_science = art_friends.difference(science_friends)
+science_but_not_art = science_friends.difference(art_friends)
+not_in_both = art_friends.symmetric_difference(science_friends)
+print(art_but_not_science)
+print(science_but_not_art)
+print(not_in_both)
+
+
+
 
 
 

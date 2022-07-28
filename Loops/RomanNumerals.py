@@ -56,3 +56,21 @@ roman_numeral_test.romanNumeralsInt("CMLII")  # 952
 
 # roman_numeral_test_1 = RomanNumerals()
 # roman_numeral_test_1.romanNumeralsStr(3)
+
+var = 10
+
+for i in range(10):
+    print(i)
+    print(var)
+    for j in range(2, 10, 1):
+        if var % 2 == 0:
+            continue
+            var += 1
+            print("var if:", var)
+    var += 1
+    print("var forj:", var)
+else:
+    var += 1
+    print("else:", var)
+
+print(var)
