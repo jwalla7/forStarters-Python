@@ -68,7 +68,17 @@ if "band_leader" in miles_second_quintet_1964:
     print("Band Leader: " + str(miles_second_quintet_1964["band_leader"]["name"]))
 
 
-print("------ Example ------")
+print("------ Example 01 ------")
 squared_number_dictionary_99 = {x: x*x for x in range(1, 100)}
 print(squared_number_dictionary_99)
+
+
+print("------ Example 02 ------")
+friend_ages = {"David": 25, "Adam": 50, "Sarah": 30}
+print(friend_ages)
+# Insertion order is kept
+friend_ages["Jeremy"] = 44
+print(friend_ages)
+
+
 

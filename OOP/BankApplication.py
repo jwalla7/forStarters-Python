@@ -7,13 +7,16 @@ class Person:
 
 
 class Employment(Person):
-    def __init__(self):
-        Person.__init__(self)
+    def __init__(self, value, profession):
+        self.profession = profession
+        # Person.__init__(self)
+        super().__init__(value)
 
 
-class Identity(Person):
-    def __init__(self):
-        Person.__init(self)
+class Identity(Person, Employment):
+    def __init__(self, value, social_security_number):
+        self.social_security_number = social_security_number
+        super().__init__(value)
 
 
 class AccountType:

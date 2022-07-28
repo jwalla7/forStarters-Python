@@ -7,3 +7,8 @@ def myName(fName, lName) -> str:
 
 
 print(myName(name, lastName))
+
+age = 31
+print(age)
+
+age.__

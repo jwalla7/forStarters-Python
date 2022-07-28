@@ -69,11 +69,9 @@ print("------ [List] Players Reported ------")
 players_names = [player_name['player'] for player_name in players]
 print(players_names)
 
-
 print("------ [List] Players Reported Over Age of 30 ------")
 players_over_30 = [player['player'] for player in players if player['age'] > 30]
 print(players_over_30)
-
 
 print("------ {Dict} Player/Stats Reported ------")
 for player_stats in players:
@@ -94,7 +92,25 @@ print("set:", reported_teams_set)
 reported_teams_set_comp = {player['team'] for player in players}
 print("set comp:", reported_teams_set_comp)
 
-
 print("------ Total Pts of Players Reported ------")
 players_total_pts = sum([player_stats['pts'] for player_stats in players])
 print(players_total_pts)
+
+
+def print_table(file, column_names):
+    """
+    Print formatted table
+    """
+
+    for col_name in column_names:
+        print('{:<10s}'.format(col_name), end=' ')
+    print()
+
+    for obj in file:
+        for col_name in column_names:
+            print('{:<10s}'.format(str(getattr(obj, col_name))), end=' ')
+        print()
+
+
+print("------ Print to Table ------")
+print_table(players, ['player', 'team', 'pts'])
